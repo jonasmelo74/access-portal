@@ -1,4 +1,10 @@
-<div class="quadrado">
-  <h1>Isso é um quadrado</h1>
-  <h1>Isso é um quadrado do outro projeto</h1>
-</div>
+<main class="main-container">
+  <section class="mt-5" [formGroup]="registrationForm">
+    <h1>Olá, seja bem-vindo!</h1>
+    <input placeholder="Digite seu nome:" size="lg" formControlName="userName" app-input />
+    <button (click)="onRegister()">Register</button>
+  </section>
+  <img src="/assets/info-teddy.png" alt="informações teddy open finance">
+  <aside class="aside-container">    
+  </aside>
+</main>
